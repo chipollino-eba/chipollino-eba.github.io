@@ -1,3 +1,63 @@
+// Переменные
+
+$ts: 20px;
+$hs: 40px;
+
+html {
+   background-color: tomato;
+   width: 1440px;
+}
 body {
-   font-size: 40px;
+   font-family: "Cormorant Unicase", Arial, sans-serif;
+   font-size: $ts;
+}
+
+.link {
+   text-decoration: none;
+   list-style: none;
+   color: #ffffff;
+}
+
+.list {
+   list-style: none;
+}
+
+.container {
+}
+
+.main-header {
+   padding: 0;
+}
+
+.main-nav {
+   background-color: #000000;
+}
+.nav-list {
+   font-weight: 700;
+   width: 1000px;
+   height: 65px;
+   padding-left: 60px;
+   color: #ffffff;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-list__item {
+}
+
+.desc {
+   position: relative;
+}
+.text-bv {
+   position: absolute;
+   top: 40px;
+   left: 700px;
+}
+
+.text-bv__mars {
+   font-style: oblique;
+   font-weight: 700;
+   font-size: 26px;
 }
