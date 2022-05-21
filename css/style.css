@@ -1,57 +1,28 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), url("../fonts/lato-thin.woff2") format("woff2"), url("../fonts/lato-thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Regular";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato"), url("../fonts/lato-regular.woff2") format("woff2"), url("../font/lato-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+}
 html {
-  background-color: tomato;
-  width: 1440px;
+  font-family: "Lato";
 }
 
-body {
-  font-family: "Cormorant Unicase", Arial, sans-serif;
-  font-size: 20px;
-}
-
-.link {
+a {
   text-decoration: none;
-  list-style: none;
-  color: #ffffff;
-}
-
-.list {
-  list-style: none;
-}
-
-.main-header {
-  padding: 0;
-}
-
-.main-nav {
-  background-color: #000000;
-}
-
-.nav-list {
-  font-weight: 700;
-  width: 1000px;
-  height: 65px;
-  padding-left: 60px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.desc {
-  position: relative;
-}
-
-.text-bv {
-  position: absolute;
-  top: 40px;
-  left: 700px;
-}
-
-.text-bv__mars {
-  font-style: oblique;
-  font-weight: 700;
-  font-size: 26px;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
