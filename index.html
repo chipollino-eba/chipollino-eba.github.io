@@ -10,73 +10,88 @@
 </head>
 
 <body>
-
-
-   <div class="test">Hello World</div>
-   <div class="container">
-      <header class="main-header">
-
-         <nav class="main-nav">
-            <ul class="list nav-list">
-               <li class="nav-list__item">
-                  <a class="link logo" href="index.html">
-                     <img src="img/logo.png" width="100" alt="Логотип компании">
-                  </a>
-               </li>
-               <li class="nav-list__item"><a class="link" href="index.html">Главная</a></li>
-               <li class="nav-list__item"><a class="link" href="interimpage.html">О компании</a></li>
-               <li class="nav-list__item"><a class="link" href="services.html">Услуги</a></li>
-               <li class="nav-list__item"><a class="link" href="interimpage.html">Наши работы</a></li>
-               <li class="nav-list__item"><a class="link" href="interimpage.html">Контакты</a></li>
-            </ul>
-         </nav>
-
-      </header>
-
-      <div class="desc">
-         <img src="img/bv206.jpg" width="1440px" alt="Заезжающий на снежный пригорок BV-206 Лось">
-         <p class="desc__text text-bv">
-            <span class="text-bv__mars">«МарсХоверКрафт»</span> - это многопрофильный автосервис, оказывающий широкий
-            спектр услуг - от распространенных до узкоспециализированных. Мы производим
-            техническое обслуживание, диагностику, плановый и капитальный ремонт дизельных
-            двигателей ГАЗ-560 Штайер, Cummins ISF 2.8, Iveco F1C и бензиновых двигателей ЗМЗ
-            405,406,409.
-         </p>
+   <header class="header">
+      <nav class="header__nav">
+         <ul class="header__list">
+            <li class="header__item">
+               <a class="header__link" href="index.html">
+                  <span class="header__logo">Ремонт двигателей</span>
+               </a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="index.html">Главная</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="interimpage.html">О компании</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="services.html">Услуги</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="interimpage.html">Наши работы</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="interimpage.html">Контакты</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="desc container">
+         оказываем широкий спектр услуг - <br> от распространенных до
+         узкоспециализированных<br>
+         <h1 class="desc__service">Многопрофильный автосервис</h1>
+         Мы производим техническое обслуживание,
+         диагностику, плановый и капитальный ремонт дизельных
+         двигателей ГАЗ-560 Штайер, Cummins ISF 2.8, Iveco F1C и бензиновых двигателей ЗМЗ
+         405, 406, 409
       </div>
+   </header>
 
-      <section class="slider">
 
-         <div class="slider__item">
-            <img class="slider__item-image" src="#" alt="">
-            <div class="slider__item-text">
-               Виды работ
-            </div>
+
+   <main class="main container">
+
+      <section class="work">
+         <div class="work__type">
+            <h2 class="work__name">Бензиновый</h3>
+               <ul class="work__list">
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+               </ul>
          </div>
 
-         <div class="slider__item">
-            <img class="slider__item-image" src="#" alt="">
-            <div class="slider__item-text">
-               Детали
-            </div>
+         <div class="work__type">
+            <h2 class="work__name">Дизельный</h3>
+               <ul class="work__list">
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+                  <li><a class="work__link" href="">Ремонт двигателя</a></li>
+               </ul>
          </div>
 
-         <div class="slider__item">
-            <img class="slider__item-image" src="#" alt="">
-            <div class="slider__item-text">
-               Запчасти
-            </div>
+         <div class="work__type">
+            <h2 class="work__name">СВП</h3>
+               <ul class="work__list">
+                  <li><a class="work__link" href="">Ремонт СВП</a></li>
+                  <li><a class="work__link" href="">Ремонт СВП</a></li>
+                  <li><a class="work__link" href="">Ремонт СВП</a></li>
+                  <li><a class="work__link" href="">Ремонт СВП</a></li>
+                  <li><a class="work__link" href="">Ремонт СВП</a></li>
+               </ul>
          </div>
 
       </section>
 
-      <dvi class="parthers">
-
+      <!-- <div class="parthers">
          <h3 class="parthers__header">Партнеры</h3>
 
          <ul class="list parthers__list">
             <li class="parthers__list-item parthers-text"><a class="link" href="interimpage.html">Судостроительная
-                  компания ООО
-                  «АКС Инвест»</a></li>
+                  компания ООО «АКС Инвест»</a></li>
             <li class="parthers__list-item parthers-text"><a class="link" href="interimpage.html">ООО «Флот»</a></li>
             <li class="parthers__list-item parthers-text"><a class="link" href="interimpage.html">ООО «Б2»</a></li>
             <li class="parthers__list-item parthers-text">
@@ -85,80 +100,76 @@
                </a>
             </li>
             <li class="parthers__list-item parthers-text"><a class="link"
-                  href="http://rushovercraft.com/">«Судостроительная
-                  компания РПР»</a></li>
+                  href="http://rushovercraft.com/">«Судостроительная компания РПР»</a></li>
          </ul>
 
-   </div>
+         <div class="clients">
+            <h2 class="clients__heading">Клиенты</h2>
+            <ul class="list clients__list">
+               <li class="clients__list-item"><a class="link" href="https://www.tng.ru">ООО «ТНГ-Групп»</a></li>
+               <li class="clients__list-item"><a class="link" href="https://www.tng.ru">ООО «ТНГ-Юграсервис»</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ФСБ по Псковской области</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ФСБ по Ленинградской области</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ФСБ по Архангельской области</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ФСБ по Приморскому краю</a></li>
+               <li class="clients__list-item"><a class="link" href="https://52.mchs.gov.ru">МЧС по Нижегородской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://69.mchs.gov.ru">МЧС по Тверской области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://63.mchs.gov.ru">МЧС по Самарской области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://64.mchs.gov.ru">МЧС по Саратовской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://76.mchs.gov.ru">МЧС по Ярославской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="#">ООО «Банк-России»</a></li>
+               <li class="clients__list-item"><a class="link" href="https://port-amurasso.ru">ЗАО «Пассажирский порт
+                     «Амурассо»</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ООО «МАРС»</a></li>
+               <li class="clients__list-item"><a class="link" href="https://www.prt24.ru">АО «ПассажирРечТранс»</a></li>
+               <li class="clients__list-item"><a class="link" href="http://www.tk.rushydro.ru">АО «ТК РусГидро»</a></li>
+               <li class="clients__list-item"><a class="link" href="#">ФГБУ «ГЗ Керженский»</a></li>
+               <li class="clients__list-item"><a class="link" href="https://52.mchs.gov.ru">ГИМС по Нижегородской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://64.mchs.gov.ru">ГИМС по Саратовской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://50.mchs.gov.ru/">ГИМС по Московской
+                     области</a>
+               </li>
+               <li class="clients__list-item"><a class="link" href="https://63.mchs.gov.ru">ГИМС по Самарской
+                     области</a>
+               </li>
+            </ul>
+         </div>
+   </main>
 
-   <div class="clients">
-
-      <h2 class="clients__heading">Клиенты</h2>
-
-      <ul class="list clients__list">
-         <li class="clients__list-item"><a class="link" href="https://www.tng.ru">ООО «ТНГ-Групп»</a></li>
-         <li class="clients__list-item"><a class="link" href="https://www.tng.ru">ООО «ТНГ-Юграсервис»</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ФСБ по Псковской области</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ФСБ по Ленинградской области</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ФСБ по Архангельской области</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ФСБ по Приморскому краю</a></li>
-         <li class="clients__list-item"><a class="link" href="https://52.mchs.gov.ru">МЧС по Нижегородской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="https://69.mchs.gov.ru">МЧС по Тверской области</a></li>
-         <li class="clients__list-item"><a class="link" href="https://63.mchs.gov.ru">МЧС по Самарской области</a></li>
-         <li class="clients__list-item"><a class="link" href="https://64.mchs.gov.ru">МЧС по Саратовской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="https://76.mchs.gov.ru">МЧС по Ярославской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="#">ООО «Банк-России»</a></li>
-         <li class="clients__list-item"><a class="link" href="https://port-amurasso.ru">ЗАО «Пассажирский порт
-               «Амурассо»</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ООО «МАРС»</a></li>
-         <li class="clients__list-item"><a class="link" href="https://www.prt24.ru">АО «ПассажирРечТранс»</a></li>
-         <li class="clients__list-item"><a class="link" href="http://www.tk.rushydro.ru">АО «ТК РусГидро»</a></li>
-         <li class="clients__list-item"><a class="link" href="#">ФГБУ «ГЗ Керженский»</a></li>
-         <li class="clients__list-item"><a class="link" href="https://52.mchs.gov.ru">ГИМС по Нижегородской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="https://64.mchs.gov.ru">ГИМС по Саратовской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="https://50.mchs.gov.ru/">ГИМС по Московской области</a>
-         </li>
-         <li class="clients__list-item"><a class="link" href="https://63.mchs.gov.ru">ГИМС по Самарской области</a></li>
+   <footer class="main-footer">
+      <ul class=" list main-footer__list">
+         <li class="main-footer__list-item">Адрес: г. Нижний Новгород, Шуваловский канал 23</li>
+         <li class="main-footer__list-item"><a class="link" href="tel:+79036022098">+7 903-602-20-98</a></li>
+         <li class="main-footer__list-item"><a class="link" href="mailto:mhk52@mail.ru">mhk52@mail.ru</a></li>
       </ul>
 
-   </div>
-
-   <div>
-
-      <footer class="main-footer">
-
-         <ul class=" list main-footer__list">
-            <li class="main-footer__list-item">Адрес: г. Нижний Новгород, Шуваловский канал 23</li>
-            <li class="main-footer__list-item"><a class="link" href="tel:+79036022098">+7 903-602-20-98</a></li>
-            <li class="main-footer__list-item"><a class="link" href="mailto:mhk52@mail.ru">mhk52@mail.ru</a></li>
-         </ul>
-
-         <!-- <div style="position:relative;overflow:hidden;">
-            <a class="link" href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps"
-               style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород
-            </a>
-            <a class="link"
-               href="https://yandex.ru/maps/47/nizhny-novgorod/house/shuvalovskiy_kanal_23/YEoYfgFhQEMHQFtsfX52dXVlYA==/?ll=43.863379%2C56.274833&utm_medium=mapframe&utm_source=maps&z=16.02"
-               style="color:#eee;font-size:12px;position:absolute;top:14px;">Шуваловский канал, 23 на карте Нижнего
-               Новгорода —
-               Яндекс Карты
-            </a>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBi6bb~A" width="560" height="400" frameborder="1"
-               allowfullscreen="true" style="position:relative;">
-            </iframe>
-         </div> -->
-
-      </footer>
-
-   </div>
-
-   </div>
-
+      <div style="position:relative;overflow:hidden;">
+         <a class="link" href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород
+         </a>
+         <a class="link"
+            href="https://yandex.ru/maps/47/nizhny-novgorod/house/shuvalovskiy_kanal_23/YEoYfgFhQEMHQFtsfX52dXVlYA==/?ll=43.863379%2C56.274833&utm_medium=mapframe&utm_source=maps&z=16.02"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Шуваловский канал, 23 на карте Нижнего
+            Новгорода —
+            Яндекс Карты
+         </a>
+         <iframe src="https://yandex.ru/map-widget/v1/-/CCUBi6bb~A" width="560" height="400" frameborder="1"
+            allowfullscreen="true" style="position:relative;">
+         </iframe>
+      </div>
+   </footer> -->
 </body>
 
 </html>

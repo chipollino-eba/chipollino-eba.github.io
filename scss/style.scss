@@ -1,37 +1,158 @@
-// Переменные
-
-$ts: 20px;
-$hs: 40px;
-
 // Шрифты
 
 @font-face {
-   font-family: "Lato";
-   font-style: normal;
-   font-weight: 400;
-   src: local("Lato"), url("../fonts/lato-thin.woff2") format("woff2"), url("../fonts/lato-thin.woff") format("woff");
-}
-
-@font-face {
-   font-family: "Lato Regular";
-   font-style: normal;
+   font-family: "Montserrat-Bold";
+   font-style: bold;
    font-weight: 700;
-   src: local("Lato"), url("../fonts/lato-regular.woff2") format("woff2"), url("../font/lato-regular.woff") format("woff");
+   src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-   font-family: "Lato Bold";
+   font-family: "Montserrat-SemiBold";
+   font-style: bold;
+   font-weight: 700;
+   src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+   font-family: "Montserrat-Regular";
+   font-style: normal;
+   font-weight: 500;
+   src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+   font-family: "Montserrat-Light";
    font-style: normal;
    font-weight: 400;
-   src: local("Lato"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+   src: local("Montserrat-ExtraLight"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+   font-family: "Montserrat-Thin";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Montserrat-Thin"), url("../fonts/Montserrat-Thin.woff") format("woff");
+}
+
+@font-face {
+   font-family: "Judith Deco";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Judith Deco"), url("../fonts/judith-deco.woff2") format("woff2"),
+      url("../fonts/judith-deco.woff") format("woff");
 }
 
 // Стили
 html {
-   font-family: "Lato";
+   font-family: "Montserrat-Regular";
 }
 
 a {
    text-decoration: none;
-   color: red;
+   color: black;
+}
+
+li {
+   list-style: none;
+}
+
+body {
+   background-color: rgb(236, 236, 236);
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+.header {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/cummins-x12-eaton.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 90vh;
+   width: 100%;
+
+   &__nav {
+      backdrop-filter: blur(10px);
+      padding: 8px 8px 8px 8px;
+      position: fixed;
+      width: 100%;
+   }
+   &__logo {
+      padding-right: 30px;
+      font-size: 25px;
+   }
+   &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+   &__item {
+      padding-left: 15px;
+   }
+   &__link {
+      font-size: 13px;
+      color: black;
+      font-family: "Montserrat-Bold";
+      text-transform: uppercase;
+      transition: color 0.3s;
+      // font-weight: 700;
+   }
+   &__link:hover {
+      color: rgb(245, 95, 95);
+   }
+}
+
+.desc {
+   font-family: "Montserrat-Regular";
+   font-size: 15px;
+   color: white;
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 20em;
+   &__service {
+      font-family: "Montserrat-Bold";
+      font-size: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+   }
+}
+
+.work {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 55px;
+   &__type {
+      padding: 15px 15px 15px 15px;
+      width: 215px;
+      height: 300px;
+      border-radius: 3px;
+      border: 0.2px solid rgb(210, 210, 210);
+      transition: box-shadow 0.3s;
+   }
+   &__type:hover {
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+   }
+   &__name {
+      font-family: "Montserrat-SemiBold";
+      font-size: 22px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+   }
+   &__list {
+      font-family: "Montserrat-Thin";
+      li {
+         padding-bottom: 35px;
+         padding-left: 35px;
+      }
+   }
+   &__link {
+      transition: color 0.3s;
+   }
+   &__link:hover {
+      color: rgb(245, 95, 95);
+   }
 }
