@@ -1,147 +1,151 @@
 @font-face {
-   font-family: "Montserrat-Bold";
-   font-style: bold;
-   font-weight: 700;
-   src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-family: "Montserrat-Bold";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 @font-face {
-   font-family: "Montserrat-SemiBold";
-   font-style: bold;
-   font-weight: 700;
-   src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-family: "Montserrat-SemiBold";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
 @font-face {
-   font-family: "Montserrat-Regular";
-   font-style: normal;
-   font-weight: 500;
-   src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 @font-face {
-   font-family: "Montserrat-Light";
-   font-style: normal;
-   font-weight: 400;
-   src: local("Montserrat-ExtraLight"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-ExtraLight"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
 }
 @font-face {
-   font-family: "Montserrat-Thin";
-   font-style: normal;
-   font-weight: 400;
-   src: local("Montserrat-Thin"), url("../fonts/Montserrat-Thin.woff") format("woff");
+  font-family: "Montserrat-Thin";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Thin"), url("../fonts/Montserrat-Thin.woff") format("woff");
 }
 @font-face {
-   font-family: "Judith Deco";
-   font-style: normal;
-   font-weight: 400;
-   src: local("Judith Deco"), url("../fonts/judith-deco.woff2") format("woff2"),
-      url("../fonts/judith-deco.woff") format("woff");
+  font-family: "Judith Deco";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Judith Deco"), url("../fonts/judith-deco.woff2") format("woff2"), url("../fonts/judith-deco.woff") format("woff");
 }
 html {
-   font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular";
 }
 
 a {
-   text-decoration: none;
-   color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
 body {
-   background-color: #ececec;
+  background-color: #ececec;
 }
 
 .container {
-   max-width: 1140px;
-   margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .header {
-   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1.png");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 90vh;
-   width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
 }
 .header__nav {
-   backdrop-filter: blur(10px);
-   padding: 8px 8px 8px 8px;
-   position: fixed;
-   width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 8px 8px 8px 8px;
+  position: fixed;
+  width: 100%;
 }
 .header__logo {
-   padding-right: 30px;
-   font-size: 25px;
+  padding-right: 30px;
+  font-size: 25px;
 }
 .header__list {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .header__item {
-   padding-left: 15px;
+  padding-left: 15px;
 }
 .header__link {
-   font-size: 13px;
-   color: white;
-   font-family: "Montserrat-Bold";
-   text-transform: uppercase;
-   transition: color 0.3s;
+  font-size: 13px;
+  color: white;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 .header__link:hover {
-   color: gray;
+  color: gray;
 }
 
 .desc {
-   font-family: "Montserrat-Regular";
-   font-size: 15px;
-   color: white;
-   text-align: center;
-   text-transform: uppercase;
-   padding-top: 20em;
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 18em;
 }
 .desc__service {
-   font-family: "Montserrat-Bold";
-   font-size: 50px;
-   padding-bottom: 10px;
-   padding-top: 10px;
+  font-family: "Montserrat-Bold";
+  font-size: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+.desc__bold {
+  font-size: 18px;
+  font-family: "Montserrat-Bold";
+}
+
 .work {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
 }
 .work__type {
-   padding: 15px 15px 15px 15px;
-   width: 215px;
-   height: 300px;
-   border-radius: 3px;
-   border: 0.2px solid #d2d2d2;
-   transition: box-shadow 0.3s;
+  padding: 15px 15px 15px 15px;
+  width: 215px;
+  height: 300px;
+  border-radius: 3px;
+  border: 0.2px solid #d2d2d2;
+  transition: box-shadow 0.3s;
 }
 .work__type:hover {
-   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 .work__name {
-   font-family: "Montserrat-SemiBold";
-   font-size: 22px;
-   text-transform: uppercase;
-   padding-bottom: 20px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 .work__list {
-   font-family: "Montserrat-Thin";
+  font-family: "Montserrat-Thin";
 }
 .work__list li {
-   padding-bottom: 35px;
-   padding-left: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
 }
 .work__link {
-   transition: color 0.3s;
+  transition: color 0.3s;
 }
 .work__link:hover {
-   color: gray;
+  color: #f55f5f;
 }
 
 /*# sourceMappingURL=style.css.map */
