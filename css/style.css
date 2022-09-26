@@ -65,7 +65,7 @@ body {
   width: 100%;
 }
 .header__nav {
-  backdrop-filter: blur(10px);
+  background-color: #c8c8c8;
   padding: 8px 8px 8px 8px;
   position: fixed;
   width: 100%;
@@ -76,7 +76,7 @@ body {
 }
 .header__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 .header__item {
