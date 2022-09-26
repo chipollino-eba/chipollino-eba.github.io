@@ -112,6 +112,22 @@ body {
   font-family: "Montserrat-Bold";
 }
 
+.parthers__title {
+  font-family: "Montserrat-Bold";
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+}
+.parthers__list {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 .work {
   display: flex;
   justify-content: space-between;
