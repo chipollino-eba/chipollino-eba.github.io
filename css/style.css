@@ -204,10 +204,13 @@ body {
   text-transform: uppercase;
 }
 .clients__list {
+  font-family: "Montserrat-Thin";
+  font-size: 14px;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 70px 70px 70px 70px 70px;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
