@@ -58,7 +58,7 @@ li {
 }
 
 body {
-   background-color: rgb(236, 236, 236);
+   background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -134,11 +134,24 @@ body {
       display: flex;
       justify-content: space-between;
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 16px;
       padding-top: 35px;
       padding-bottom: 35px;
    }
-
+   &__link-name::after {
+      background-color: black;
+      display: block;
+      content: "";
+      height: 1px;
+      width: 0%;
+      -webkit-transition: width 0.3s ease-in-out;
+      -moz--transition: width 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out;
+   }
+   &__link-name:hover::after,
+   &__link-name:focus::after {
+      width: 100%;
+   }
 }
 
 .work {
@@ -193,5 +206,21 @@ body {
    }
    &__link:hover {
       color: gray;
+   }
+}
+
+.clients {
+   &__title {
+      font-family: "Montserrat-Bold";
+      font-size: 40px;
+      margin-top: 70px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   &__list {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 70px 70px 70px 70px 70px;
    }
 }
