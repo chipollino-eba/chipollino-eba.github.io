@@ -71,7 +71,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   height: 90vh;
+   max-height: 100vh;
    width: 100%;
    &__nav {
       backdrop-filter: blur(10px);
@@ -109,7 +109,8 @@ body {
    color: white;
    text-align: center;
    text-transform: uppercase;
-   padding-top: 18em;
+   padding-top: 15em;
+   padding-bottom: 15em;
    &__service {
       font-family: "Montserrat-Bold";
       font-size: 50px;
@@ -128,7 +129,7 @@ body {
       font-size: 40px;
       text-transform: uppercase;
       text-align: center;
-      padding-top: 20px;
+      margin-top: 50px;
    }
    &__list {
       display: flex;
@@ -218,12 +219,43 @@ body {
       text-transform: uppercase;
    }
    &__list {
-      font-family: "Montserrat-Thin";
+      font-family: "Montserrat-Regular";
       font-size: 14px;
       padding-top: 50px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 70px 70px 70px 70px 70px;
-      gap: 30px;
+      column-gap: 50px;
+   }
+   &__link-name {
+      transition: color 0.3s ease-in-out;
+   }
+   &__link-name:hover {
+      color: rgb(160, 160, 160)
+   }
+}
+
+.map-text {
+   font-family: "Montserrat-Bold";
+   font-size: 50px;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+.footer {
+   width: 100%;
+   background: rgb(95, 95, 95);
+   margin-top: 50px;
+   &__list {
+      display: grid;
+      row-gap: 8px;
+      font-family: "Montserrat-Thin";
+      color: white;
+      padding-top: 22px;
+      padding-bottom: 22px;
+   }
+   &__link {
+      color: white;
    }
 }
