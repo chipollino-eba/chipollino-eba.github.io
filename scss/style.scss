@@ -76,7 +76,6 @@ body {
    &__nav {
       background-color: rgb(200, 200, 200);
       padding: 8px 8px 8px 8px;
-      position: fixed;
       width: 100%;
    }
    &__logo {
@@ -231,7 +230,7 @@ body {
       transition: color 0.3s ease-in-out;
    }
    &__link-name:hover {
-      color: rgb(160, 160, 160)
+      color: rgb(160, 160, 160);
    }
 }
 
