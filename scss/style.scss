@@ -59,6 +59,17 @@ li {
 
 body {
    background-color: rgb(240, 240, 240);
+   height: 100%;
+}
+
+main {
+   flex: 1 1 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
 .container {
@@ -282,7 +293,6 @@ body {
    }
 }
 
-// Вездеходы
 .repair {
    background-repeat: no-repeat;
    background-size: cover;
@@ -320,4 +330,43 @@ body {
 
 .svp {
    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hivus.JPG");
+}
+
+// вездеходы
+.advantage {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mud.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   max-height: 100vh;
+   width: 100%;
+   color: white;
+   &__title {
+      font-family: "Montserrat-Bold";
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 60px;
+      padding-top: 40px;
+   }
+   &__image {
+      border-radius: 50%;
+   }
+   &__item-gaz {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__item-bv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 40px;
+   }
+   .image-bv {
+      margin-left: 150px;
+   }
+   .image-gaz {
+      margin-right: 150px;
+   }
 }
