@@ -311,7 +311,7 @@ main {
 }
 
 .svp {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hivus.JPG");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hovercraft1.jpg");
 }
 
 .advantage {
@@ -350,6 +350,24 @@ main {
 }
 .advantage .image-first {
   margin-right: 150px;
+}
+
+.svp-image {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hovercraft1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.disel-image {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/engine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
