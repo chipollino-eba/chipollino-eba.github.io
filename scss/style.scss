@@ -325,7 +325,7 @@ main {
 
 .egine {
    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/cummins-x12-eaton.jpeg");
+      url("../img/shtaer.jpg");
 }
 
 .svp {
@@ -352,21 +352,21 @@ main {
    &__image {
       border-radius: 50%;
    }
-   &__item-gaz {
+   &__item-first {
       display: flex;
       justify-content: space-between;
       align-items: center;
    }
-   &__item-bv {
+   &__item-second {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 40px;
    }
-   .image-bv {
+   .image-second {
       margin-left: 150px;
    }
-   .image-gaz {
+   .image-first {
       margin-right: 150px;
    }
 }
