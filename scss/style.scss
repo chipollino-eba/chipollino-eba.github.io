@@ -59,22 +59,34 @@ li {
 
 body {
    background-color: rgb(240, 240, 240);
-   height: 100%;
 }
 
 main {
-   flex: 1 1 auto;
-}
-
-.wrapper {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
+   padding-bottom: 100px;
+   min-height: 100vh;
 }
 
 .container {
    max-width: 1140px;
    margin: 0 auto;
+}
+
+@media (max-width: 1140px) {
+   .container {
+      max-width: 970px;
+   }
+}
+
+@media (max-width: 992px) {
+   .container {
+      max-width: 750px;
+   }
+}
+
+@media (max-width: 767px) {
+   .container {
+      max-width: none;
+   }
 }
 
 .header-engine {
@@ -135,41 +147,10 @@ main {
    }
 }
 
-.parthers {
-   &__title {
-      font-family: "Montserrat-Bold";
-      font-size: 40px;
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: 50px;
-   }
-   &__list {
-      display: flex;
-      justify-content: space-between;
-      text-transform: uppercase;
-      font-size: 16px;
-      padding-top: 35px;
-      padding-bottom: 35px;
-   }
-   &__link-name::after {
-      background-color: black;
-      display: block;
-      content: "";
-      height: 1px;
-      width: 0%;
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz--transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
-   }
-   &__link-name:hover::after,
-   &__link-name:focus::after {
-      width: 100%;
-   }
-}
-
 .work {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    margin-top: 55px;
    &__title {
       font-family: "Montserrat-Bold";
@@ -179,10 +160,12 @@ main {
       margin-top: 35px;
    }
    &__type {
+      background: rgb(210, 210, 210);
       padding: 15px 15px 15px 15px;
+      margin-left: 25px;
       width: 215px;
       height: 300px;
-      border-radius: 3px;
+      border-radius: 25px;
       border: 0.2px solid rgb(210, 210, 210);
       transition: box-shadow 0.3s, transform 0.3s;
    }
@@ -208,7 +191,7 @@ main {
          background: url("../img/1.svg") no-repeat center;
          position: absolute;
          width: 25px;
-         height: 25px;
+         height: 30px;
          left: 0;
          top: 20%;
          transform: translateY(-50%);
@@ -243,6 +226,23 @@ main {
    }
 }
 
+.parthers {
+   &__title {
+      font-family: "Montserrat-Bold";
+      font-size: 40px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 100px;
+   }
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding-top: 35px;
+   }
+}
+
 .clients {
    &__title {
       font-family: "Montserrat-Bold";
@@ -260,12 +260,6 @@ main {
       grid-template-rows: 70px 70px 70px 70px 70px;
       column-gap: 50px;
    }
-   &__link-name {
-      transition: color 0.3s ease-in-out;
-   }
-   &__link-name:hover {
-      color: rgb(160, 160, 160);
-   }
 }
 
 .map-text {
@@ -279,7 +273,6 @@ main {
 .footer {
    width: 100%;
    background: rgb(95, 95, 95);
-   margin-top: 50px;
    &__list {
       display: grid;
       row-gap: 8px;
@@ -349,8 +342,7 @@ main {
       padding-top: 40px;
    }
    &__image {
-      border-radius: 50%;
-      
+      border-radius: 25px;
    }
    &__item-first {
       display: flex;
