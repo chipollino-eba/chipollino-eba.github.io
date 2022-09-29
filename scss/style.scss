@@ -85,6 +85,7 @@ main {
    &__wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
    &__nav {
       background-color: rgb(200, 200, 200);
@@ -273,6 +274,16 @@ main {
    }
 }
 
+.main {
+   &__profile {
+      font-family: "Montserrat-Bold";
+      font-size: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 75px;
+   }
+}
+
 .repair {
    background-repeat: no-repeat;
    background-size: cover;
@@ -367,20 +378,28 @@ main {
    max-height: 100vh;
    width: 100%;
 }
+
 .burger {
    display: none;
 }
+
 @media (max-width: 1199px) {
+   .container {
+      max-width: 992px;
+   }
    .header {
       &__list {
          display: none;
       }
+      &__logo {
+         font-size: 35px;
+      }
    }
+
    .burger {
       display: block;
       font-family: "Montserrat-Bold";
       width: 320px;
-      background-color: gray;
       position: relative;
       text-align: center;
       height: 40px;
@@ -409,18 +428,15 @@ main {
       background-color: black;
       transition: 0.3s all;
    }
-
    .second,
    .third {
       top: 18px;
       width: 35px;
    }
-
    .fourth {
       top: 28px;
       width: 35px;
    }
-
    .main-menu {
       display: block;
       position: absolute;
@@ -447,20 +463,32 @@ main {
       max-height: 500px;
       font-size: 16px;
    }
-
    #check-menu:checked ~ .first {
       display: none;
    }
-
    #check-menu:checked ~ .second {
       transform: rotate(45deg);
    }
-
    #check-menu:checked ~ .third {
       transform: rotate(-45deg);
    }
-
    #check-menu:checked ~ .fourth {
       display: none;
+   }
+
+   .desc {
+      font-size: 20px;
+      &__service {
+         font-size: 60px;
+      }
+      &__bold {
+         font-size: 23px;
+      }
+   }
+
+   .main {
+      &__profile {
+         font-size: 60px;
+      }
    }
 }

@@ -74,6 +74,7 @@ main {
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__nav {
   background-color: #c8c8c8;
@@ -257,6 +258,14 @@ main {
   color: white;
 }
 
+.main__profile {
+  font-family: "Montserrat-Bold";
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+
 .repair {
   background-repeat: no-repeat;
   background-size: cover;
@@ -356,15 +365,21 @@ main {
 }
 
 @media (max-width: 1199px) {
+  .container {
+    max-width: 992px;
+  }
+
   .header__list {
     display: none;
+  }
+  .header__logo {
+    font-size: 35px;
   }
 
   .burger {
     display: block;
     font-family: "Montserrat-Bold";
     width: 320px;
-    background-color: gray;
     position: relative;
     text-align: center;
     height: 40px;
@@ -450,6 +465,20 @@ main {
 
   #check-menu:checked ~ .fourth {
     display: none;
+  }
+
+  .desc {
+    font-size: 20px;
+  }
+  .desc__service {
+    font-size: 60px;
+  }
+  .desc__bold {
+    font-size: 23px;
+  }
+
+  .main__profile {
+    font-size: 60px;
   }
 }
 
