@@ -62,8 +62,8 @@ body {
 }
 
 main {
-   padding-bottom: 100px;
-   min-height: 100vh;
+   // padding-bottom: 100px;
+   // min-height: 100vh;
 }
 
 .container {
@@ -119,6 +119,7 @@ main {
    font-family: "Montserrat-Regular";
    font-size: 15px;
    color: white;
+   display: block;
    text-align: center;
    text-transform: uppercase;
    padding-top: 15em;
@@ -261,6 +262,7 @@ main {
 .footer {
    width: 100%;
    background: rgb(95, 95, 95);
+   margin-top: 70px;
    &__list {
       display: grid;
       row-gap: 8px;
@@ -490,5 +492,38 @@ main {
       &__profile {
          font-size: 60px;
       }
+      .parthers {
+         &__title {
+            font-size: 60px;
+         }
+         &__list {
+            display: grid;
+            row-gap: 12px;
+            font-size: 24px;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+         }
+      }
+
+      .clients {
+         margin-bottom: 160px;
+         &__title {
+            font-size: 60px;
+         }
+         &__list {
+            font-size: 23px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            row-gap: 30px;
+            li {
+               text-align: center;
+            }
+         }
+      }
+   }
+   .map-text {
+      font-size: 60px;
    }
 }
