@@ -424,13 +424,16 @@ body {
     display: block;
     position: absolute;
     width: 100%;
+    padding-top: 9px;
     bottom: 0;
-    left: 0;
+    right: 0;
     transform: translateY(100%);
     max-height: 0;
     font-size: 0;
     overflow: hidden;
     transition: 0.3s all;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .main-menu a {
     display: block;
@@ -438,14 +441,18 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     text-decoration: none;
-    border-top: 2px solid black;
-    background: gray;
+    text-transform: uppercase;
+    border-top: 1px solid #969696;
+    background: #c8c8c8;
     color: black;
+  }
+  .main-menu a:hover {
+    color: white;
   }
 
   #check-menu:checked ~ .main-menu {
     max-height: 500px;
-    font-size: 16px;
+    font-size: 28px;
   }
 
   #check-menu:checked ~ .first {
