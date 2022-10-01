@@ -12,7 +12,30 @@
 <body>
    <header class="header header-engine">
       <nav class="header__nav">
-         <div class="header__wrapper container">
+         <div class="header__wrapper">
+
+            <div class="burger-menu">
+               <a href="#" class="burger-menu__button">
+                  <span class="burger-menu__lines"></span>
+               </a>
+               <nav class="burger-menu__nav">
+                  <a href="index.html" class="burger-menu__link">Главная</a>
+                  <a href="#" class="burger-menu__link">О компании</a>
+                  <a href="#" class="burger-menu__link">Услуги</a>
+                  <a href="#" class="burger-menu__link">Наши работы</a>
+                  <a href="#" class="burger-menu__link">Контакты</a>
+               </nav>
+
+               <div class="burger-menu__overlay"></div>
+               <!-- <section id="section-1"></section>
+               <section id="section-2"></section>
+               <section id="section-3"></section>
+               <section id="section-4"></section>
+               <section id="section-5"></section> -->
+            </div>
+
+
+
             <a class="header__link" href="index.html">
                <span class="header__logo">Ремонт двигателей</span>
             </a>
@@ -35,22 +58,6 @@
                </li>
             </ul>
 
-            <div class="burger">
-               <input type="checkbox" id="check-menu">
-               <label for="check-menu"></label>
-               <div class="burger-line first"></div>
-               <div class="burger-line second"></div>
-               <div class="burger-line third"></div>
-               <div class="burger-line fourth"></div>
-               <nav class="main-menu">
-                  <a href="index.html">Главная</a>
-                  <a href="interimpage.html">О компании</a>
-                  <a href="interimpage.html">Услуги</a>
-                  <a href="interimpage.html">Наши работы</a>
-                  <a href="interimpage.html">Контакты</a>
-               </nav>
-            </div>
-
          </div>
       </nav>
       <div class="desc container">
@@ -71,19 +78,16 @@
 
       <h2 class="main__profile">Профильный ремонт</h2>
       <a href="all-terrain-vehicle.html">
-         <section class="repair all all-terrain">
+         <section class="repair all-terrain">
             <h2 class="repair__title">Обслуживание и ремонт вездеходов</h2>
             <div class="repair__box1">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis.
             </div>
             <div class="repair__box2">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis, explicabo ex molestias voluptatem quod quis. Illum amet illo magnam
-               quibusdam
-               sunt.
+               quibusdam sunt.
             </div>
          </section>
       </a>
@@ -92,16 +96,13 @@
          <section class="repair egine">
             <h2 class="repair__title">Обслуживание и ремонт дизельных двигателей</h2>
             <div class="repair__box1">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis.
             </div>
             <div class="repair__box2">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis, explicabo ex molestias voluptatem quod quis. Illum amet illo magnam
-               quibusdam
-               sunt.
+               quibusdam sunt.
             </div>
          </section>
       </a>
@@ -110,16 +111,13 @@
          <section class="repair svp">
             <h2 class="repair__title">Обслуживание и ремонт<br> СВП</h2>
             <div class="repair__box1">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis.
             </div>
             <div class="repair__box2">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias
-               ipsam
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, animi labore sint alias ipsam
                dolores dolorum perferendis, explicabo ex molestias voluptatem quod quis. Illum amet illo magnam
-               quibusdam
-               sunt.
+               quibusdam sunt.
             </div>
          </section>
       </a>
@@ -181,11 +179,13 @@
 
    <footer class="footer">
       <ul class="footer__list container">
-         <li class="footer__item">г. Нижний Новгород, Шуваловский канал 23</li>
+         <li class="footer__item">г. Нижний Новгород, <br>Шуваловский канал 23</li>
          <li class="footer__item"><a class="footer__link" href="tel:+79036022098">+7 903-602-20-98</a></li>
          <li class="footer__item"><a class="footer__link" href="mailto:mhk52@mail.ru">mhk52@mail.ru</a></li>
       </ul>
    </footer>
+
+   <script src="js/scripts.js"></script>
 </body>
 
 </html>
