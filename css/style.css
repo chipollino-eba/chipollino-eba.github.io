@@ -81,7 +81,7 @@ body {
 }
 .header__logo {
   padding-right: 30px;
-  font-size: 25px;
+  font-size: 28px;
 }
 .header__list {
   display: flex;
@@ -109,8 +109,8 @@ body {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 15em;
-  padding-bottom: 15em;
+  padding-top: 10em;
+  padding-bottom: 7em;
 }
 .desc__service {
   font-family: "Montserrat-Bold";
@@ -229,9 +229,11 @@ body {
   font-size: 14px;
   padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 70px 70px 70px 70px 70px;
-  column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 70px 70px 70px;
+  column-gap: 30px;
+  margin-bottom: 65px;
+  justify-items: center;
 }
 
 .map-text {
@@ -409,11 +411,14 @@ body {
   }
   .main .parthers__list {
     display: grid;
-    row-gap: 12px;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    font-size: 20px;
     justify-items: center;
+  }
+  .main .parthers__list .rpr {
+    grid-column: 1/3;
   }
   .main .clients {
     margin-bottom: 160px;
@@ -422,14 +427,9 @@ body {
     font-size: 60px;
   }
   .main .clients__list {
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 30px;
-  }
-  .main .clients__list li {
-    text-align: center;
+    font-size: 17px;
+    grid-template-rows: 65px 65px 65px 65px 65px;
+    justify-items: start;
   }
 
   .map-text {
@@ -447,10 +447,13 @@ body {
 
   .header__logo {
     padding-right: 0;
-    font-size: 42px;
+    font-size: 36px;
   }
   .header__list {
     display: none;
+  }
+  .header__nav {
+    padding-bottom: 18px;
   }
 
   .burger-menu {
@@ -559,6 +562,48 @@ body {
   .repair__box1, .repair__box2 {
     font-size: 14px;
     padding-left: 50px;
+  }
+
+  .main .parthers__list {
+    font-size: 16px;
+  }
+  .main .clients__list {
+    font-size: 14px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    justify-items: start;
+  }
+
+  .footer__list li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 568px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+  .desc__service {
+    font-size: 44px;
+  }
+  .desc__bold {
+    font-size: 18px;
+  }
+
+  .repair__title {
+    font-size: 26px;
+  }
+  .repair__box1, .repair__box2 {
+    font-size: 12px;
+  }
+
+  .main .clients__list {
+    font-size: 13px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+    margin-bottom: 15px;
   }
 }
 
