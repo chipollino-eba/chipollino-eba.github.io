@@ -62,7 +62,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-height: 100vh;
   width: 100%;
 }
 
@@ -251,7 +250,7 @@ body {
 .footer__list {
   display: grid;
   row-gap: 8px;
-  font-family: "Montserrat-Thin";
+  font-family: "Montserrat-Regular";
   color: white;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -288,6 +287,9 @@ body {
   text-transform: uppercase;
   max-width: 400px;
   grid-row: 1/3;
+}
+.repair__box1, .repair__box2 {
+  font-size: 17px;
 }
 
 .repair:hover {
@@ -375,37 +377,103 @@ body {
     max-width: 992px;
   }
 
-  .header__list {
-    display: none;
-  }
   .header__logo {
-    font-size: 35px;
+    font-size: 28px;
   }
   .header__nav {
     width: 100%;
   }
+  .header__link {
+    font-size: 15px;
+  }
+
+  .desc {
+    font-size: 20px;
+  }
+  .desc__service {
+    font-size: 60px;
+  }
+  .desc__bold {
+    font-size: 23px;
+  }
+
+  .repair__box1, .repair__box2 {
+    font-size: 15px;
+  }
+
+  .main__profile {
+    font-size: 60px;
+  }
+  .main .parthers__title {
+    font-size: 60px;
+  }
+  .main .parthers__list {
+    display: grid;
+    row-gap: 12px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .main .clients {
+    margin-bottom: 160px;
+  }
+  .main .clients__title {
+    font-size: 60px;
+  }
+  .main .clients__list {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+  .main .clients__list li {
+    text-align: center;
+  }
+
+  .map-text {
+    font-size: 60px;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header__logo {
+    padding-right: 0;
+    font-size: 42px;
+  }
+  .header__list {
+    display: none;
+  }
 
   .burger-menu {
     display: block;
-    padding-left: 30px;
   }
   .burger-menu__button {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 6px;
+    left: 30px;
     z-index: 30;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: #2a2a2a;
   }
   .burger-menu__lines, .burger-menu__lines::after, .burger-menu__lines::before {
     position: absolute;
-    width: 20px;
+    width: 30px;
     height: 4px;
     z-index: 40;
     background: white;
-    border-radius: 1px;
+    border-radius: 2px;
+    transition: all 0.6s;
   }
   .burger-menu__lines {
     top: 50%;
@@ -417,11 +485,11 @@ body {
   }
   .burger-menu__lines::before {
     content: "";
-    top: 8px;
+    top: 10px;
   }
   .burger-menu__lines::after {
     content: "";
-    top: -8px;
+    top: -10px;
   }
 
   .burger-menu__active .burger-menu__lines {
@@ -449,6 +517,7 @@ body {
     overflow-y: auto;
     left: -100%;
     top: 0;
+    transition: all 0.6s;
   }
 
   .burger-menu__active .burger-menu__nav {
@@ -456,8 +525,11 @@ body {
   }
 
   .burger-menu__link {
-    padding: 30px;
+    padding-left: 45px;
+    padding-top: 45px;
+    padding-right: 45px;
     font-size: 32px;
+    font-family: "Montserrat-SemiBold";
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 5px;
@@ -466,6 +538,7 @@ body {
 
   .burger-menu__link:hover {
     filter: brightness(0.7);
+    transition: all 0.3s;
   }
 
   .burger-menu__overlay {
@@ -476,62 +549,16 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -10;
+    transition: all 0.4s;
   }
 
   .burger-menu__active .burger-menu__overlay {
     display: block;
   }
 
-  .desc {
-    font-size: 20px;
-  }
-  .desc__service {
-    font-size: 60px;
-  }
-  .desc__bold {
-    font-size: 23px;
-  }
-
-  .main__profile {
-    font-size: 60px;
-  }
-  .main .repair__box1, .main .repair__box2 {
-    font-size: 17px;
-  }
-  .main .parthers__title {
-    font-size: 60px;
-  }
-  .main .parthers__list {
-    display: grid;
-    row-gap: 12px;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  }
-  .main .clients {
-    margin-bottom: 160px;
-  }
-  .main .clients__title {
-    font-size: 60px;
-  }
-  .main .clients__list {
-    font-size: 23px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 30px;
-  }
-  .main .clients__list li {
-    text-align: center;
-  }
-
-  .map-text {
-    font-size: 60px;
-  }
-
-  .footer {
-    font-size: 20px;
+  .repair__box1, .repair__box2 {
+    font-size: 14px;
+    padding-left: 50px;
   }
 }
 
