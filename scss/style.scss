@@ -140,7 +140,7 @@ main {
 
 .work {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    margin-top: 55px;
    &__title {
       font-family: "Montserrat-Bold";
@@ -152,7 +152,6 @@ main {
    &__type {
       background: rgb(210, 210, 210);
       padding: 15px 15px 15px 15px;
-      // margin-left: 25px; УБРАЛ ПОТОМУ ЧТО НА МОБИЛЕ БАГАЛОСЬ
       width: 215px;
       height: 355px;
       border-radius: 25px;
@@ -195,26 +194,27 @@ main {
    }
 }
 
-.work-type {
-   font-size: 20px;
-   text-transform: uppercase;
-   display: flex;
-   justify-content: space-evenly;
-   a::after {
-      background-color: black;
-      display: block;
-      content: "";
-      height: 1.5px;
-      width: 0%;
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz--transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
-   }
-   a:hover::after,
-   a:focus::after {
-      width: 100%;
-   }
-}
+// СТИЛИ ДЛЯ НАВЕДЕНИЯ КАРТОЧЕК С УСЛУГАМИ
+// .work-type {
+//    font-size: 20px;
+//    text-transform: uppercase;
+//    display: flex;
+//    justify-content: space-evenly;
+//    a::after {
+//       background-color: black;
+//       display: block;
+//       content: "";
+//       height: 1.5px;
+//       width: 0%;
+//       -webkit-transition: width 0.3s ease-in-out;
+//       -moz--transition: width 0.3s ease-in-out;
+//       transition: width 0.3s ease-in-out;
+//    }
+//    a:hover::after,
+//    a:focus::after {
+//       width: 100%;
+//    }
+// }
 
 .parthers {
    &__title {
@@ -381,7 +381,6 @@ main {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   max-height: 100vh;
    width: 100%;
 }
 
@@ -390,7 +389,6 @@ main {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   max-height: 100vh;
    width: 100%;
 }
 
