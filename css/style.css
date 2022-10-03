@@ -644,6 +644,14 @@ body {
     top: 8px;
   }
 
+  .burger-menu__nav {
+    left: -150%;
+  }
+
+  .burger-menu__link {
+    font-size: 16px;
+  }
+
   .desc {
     font-size: 11px;
   }
@@ -652,10 +660,6 @@ body {
   }
   .desc__bold {
     font-size: 12px;
-  }
-
-  .burger-menu__nav {
-    left: -150%;
   }
 
   .main__profile {

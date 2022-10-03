@@ -704,7 +704,12 @@ main {
    .burger-menu__lines::before {
       top: 8px;
    }
-
+   .burger-menu__nav {
+      left: -150%;
+   }
+   .burger-menu__link {
+      font-size: 16px;
+   }
    .desc {
       font-size: 11px;
       &__service {
@@ -714,9 +719,7 @@ main {
          font-size: 12px;
       }
    }
-   .burger-menu__nav {
-      left: -150%;
-   }
+
    .main {
       &__profile {
          font-size: 38px;
