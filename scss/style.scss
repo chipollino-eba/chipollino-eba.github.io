@@ -737,18 +737,21 @@ main {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
-            font-size: 9px;
+            font-size: 13px;
          }
       }
       .clients {
+         margin-bottom: 62px;
          &__title {
             font-size: 38px;
          }
          &__list {
-            font-size: 8px;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px;
+            font-size: 15px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 15px;
             justify-items: center;
+            justify-content: center;
          }
       }
       .map-text {
