@@ -140,8 +140,7 @@ main {
 
 .work {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   justify-content: center;
    margin-top: 55px;
    &__title {
       font-family: "Montserrat-Bold";
@@ -153,9 +152,9 @@ main {
    &__type {
       background: rgb(210, 210, 210);
       padding: 15px 15px 15px 15px;
-      margin-left: 25px;
+      // margin-left: 25px; УБРАЛ ПОТОМУ ЧТО НА МОБИЛЕ БАГАЛОСЬ
       width: 215px;
-      height: 300px;
+      height: 355px;
       border-radius: 25px;
       border: 0.2px solid rgb(210, 210, 210);
       transition: box-shadow 0.3s, transform 0.3s;
@@ -288,6 +287,13 @@ main {
       text-transform: uppercase;
       margin-top: 75px;
    }
+   &__prof {
+      font-family: "Montserrat-Bold";
+      font-size: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 75px;
+   }
 }
 
 .repair {
@@ -332,22 +338,20 @@ main {
    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hovercraft1.jpg");
 }
 
-// вездеходы
 .advantage {
    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mud.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   max-height: 100vh;
    width: 100%;
    color: white;
    &__title {
       font-family: "Montserrat-Bold";
-      font-size: 40px;
+      font-size: 50px;
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 60px;
-      padding-top: 40px;
+      padding-top: 140px;
+      padding-bottom: 40px;
    }
    &__image {
       border-radius: 25px;
@@ -356,6 +360,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 30px;
    }
    &__item-second {
       display: flex;
@@ -504,8 +509,6 @@ main {
          z-index: 30;
          width: 60px;
          height: 60px;
-         border-radius: 50%;
-         background: #2a2a2a;
       }
       &__lines,
       &__lines::after,
@@ -631,6 +634,24 @@ main {
          }
       }
    }
+
+   // внутренние страницы
+   .main {
+      .advantage {
+         &__image {
+            max-width: 172px;
+            max-height: 172px;
+         }
+         &__title {
+            font-size: 60px;
+         }
+         &__text {
+            font-size: 16px;
+         }
+      }
+   }
+   .work {
+   }
 }
 
 @media (max-width: 767px) {
@@ -672,6 +693,32 @@ main {
          }
       }
    }
+   // внутренние страницы
+   .main {
+      .advantage {
+         &__title {
+            font-size: 50px;
+         }
+         &__text {
+            font-size: 13px;
+         }
+      }
+      .work {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         justify-items: center;
+         row-gap: 20px;
+         &__type {
+            width: 450px;
+            height: 150px;
+         }
+         &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+      }
+   }
 }
 
 @media (max-width: 575px) {
@@ -689,9 +736,9 @@ main {
    .burger-menu__button {
       width: 46px;
       height: 46px;
-      margin-top: 6px;
-      top: 4px;
+      top: 8px;
    }
+
    .burger-menu__lines,
    .burger-menu__lines::after,
    .burger-menu__lines::before {
@@ -710,19 +757,24 @@ main {
    .burger-menu__link {
       font-size: 16px;
    }
+
    .desc {
-      font-size: 11px;
+      font-size: 10px;
       &__service {
-         font-size: 26px;
+         font-size: 22px;
       }
       &__bold {
-         font-size: 12px;
+         font-size: 10px;
       }
    }
 
    .main {
       &__profile {
-         font-size: 38px;
+         font-size: 32px;
+         letter-spacing: 1px;
+      }
+      .all-terrain {
+         margin-top: 50px;
       }
       .repair {
          display: grid;
@@ -731,10 +783,14 @@ main {
          &__box1 {
             font-size: 10px;
          }
+         &__title {
+            font-size: 20px;
+         }
       }
       .parthers {
          &__title {
-            font-size: 38px;
+            font-size: 32px;
+            letter-spacing: 1px;
          }
          &__list {
             display: flex;
@@ -746,7 +802,8 @@ main {
       .clients {
          margin-bottom: 62px;
          &__title {
-            font-size: 38px;
+            font-size: 32px;
+            letter-spacing: 1px;
          }
          &__list {
             font-size: 15px;
@@ -758,7 +815,44 @@ main {
          }
       }
       .map-text {
-         font-size: 38px;
+         font-size: 32px;
+         letter-spacing: 1px;
+      }
+   }
+
+   // внутренние страницы
+   .main {
+      &__prof {
+         font-size: 36px;
+      }
+      .advantage {
+         &__title {
+            font-size: 36px;
+         }
+         &__text {
+            font-size: 11px;
+         }
+      }
+      .image-first {
+         margin-right: 30px;
+      }
+      .image-second {
+         margin-left: 30px;
+      }
+      .work {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         justify-items: center;
+         row-gap: 20px;
+         &__type {
+            width: 290px;
+            height: 190px;
+         }
+         &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         }
       }
    }
 }

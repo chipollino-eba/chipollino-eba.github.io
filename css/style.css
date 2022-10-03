@@ -125,8 +125,7 @@ body {
 
 .work {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   margin-top: 55px;
 }
 .work__title {
@@ -139,9 +138,8 @@ body {
 .work__type {
   background: #d2d2d2;
   padding: 15px 15px 15px 15px;
-  margin-left: 25px;
   width: 215px;
-  height: 300px;
+  height: 355px;
   border-radius: 25px;
   border: 0.2px solid #d2d2d2;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -268,6 +266,13 @@ body {
   text-transform: uppercase;
   margin-top: 75px;
 }
+.main__prof {
+  font-family: "Montserrat-Bold";
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
 
 .repair {
   background-repeat: no-repeat;
@@ -315,17 +320,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-height: 100vh;
   width: 100%;
   color: white;
 }
 .advantage__title {
   font-family: "Montserrat-Bold";
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
-  padding-top: 40px;
+  padding-top: 140px;
+  padding-bottom: 40px;
 }
 .advantage__image {
   border-radius: 25px;
@@ -334,6 +338,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 }
 .advantage__item-second {
   display: flex;
@@ -469,8 +474,6 @@ body {
     z-index: 30;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    background: #2a2a2a;
   }
   .burger-menu__lines, .burger-menu__lines::after, .burger-menu__lines::before {
     position: absolute;
@@ -583,6 +586,17 @@ body {
   .footer__list li {
     font-size: 14px;
   }
+
+  .main .advantage__image {
+    max-width: 172px;
+    max-height: 172px;
+  }
+  .main .advantage__title {
+    font-size: 60px;
+  }
+  .main .advantage__text {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -611,6 +625,28 @@ body {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
     margin-bottom: 15px;
   }
+
+  .main .advantage__title {
+    font-size: 50px;
+  }
+  .main .advantage__text {
+    font-size: 13px;
+  }
+  .main .work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+  }
+  .main .work__type {
+    width: 450px;
+    height: 150px;
+  }
+  .main .work__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 575px) {
   .header__nav {
@@ -625,8 +661,7 @@ body {
   .burger-menu__button {
     width: 46px;
     height: 46px;
-    margin-top: 6px;
-    top: 4px;
+    top: 8px;
   }
 
   .burger-menu__lines,
@@ -653,17 +688,21 @@ body {
   }
 
   .desc {
-    font-size: 11px;
+    font-size: 10px;
   }
   .desc__service {
-    font-size: 26px;
+    font-size: 22px;
   }
   .desc__bold {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .main__profile {
-    font-size: 38px;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+  .main .all-terrain {
+    margin-top: 50px;
   }
   .main .repair {
     display: grid;
@@ -673,8 +712,12 @@ body {
   .main .repair__box1 {
     font-size: 10px;
   }
+  .main .repair__title {
+    font-size: 20px;
+  }
   .main .parthers__title {
-    font-size: 38px;
+    font-size: 32px;
+    letter-spacing: 1px;
   }
   .main .parthers__list {
     display: flex;
@@ -686,7 +729,8 @@ body {
     margin-bottom: 62px;
   }
   .main .clients__title {
-    font-size: 38px;
+    font-size: 32px;
+    letter-spacing: 1px;
   }
   .main .clients__list {
     font-size: 15px;
@@ -697,7 +741,39 @@ body {
     justify-content: center;
   }
   .main .map-text {
-    font-size: 38px;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .main__prof {
+    font-size: 36px;
+  }
+  .main .advantage__title {
+    font-size: 36px;
+  }
+  .main .advantage__text {
+    font-size: 11px;
+  }
+  .main .image-first {
+    margin-right: 30px;
+  }
+  .main .image-second {
+    margin-left: 30px;
+  }
+  .main .work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+  }
+  .main .work__type {
+    width: 290px;
+    height: 190px;
+  }
+  .main .work__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
