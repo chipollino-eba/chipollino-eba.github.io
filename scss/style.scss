@@ -124,8 +124,8 @@ main {
    display: block;
    text-align: center;
    text-transform: uppercase;
-   padding-top: 10em;
-   padding-bottom: 7em;
+   padding-top: 20em;
+   padding-bottom: 15em;
    &__service {
       font-family: "Montserrat-Bold";
       font-size: 50px;
@@ -414,6 +414,8 @@ main {
    }
 
    .desc {
+      padding-top: 10em;
+      padding-bottom: 7em;
       font-size: 20px;
       &__service {
          font-size: 60px;
@@ -487,6 +489,7 @@ main {
          display: none;
       }
       &__nav {
+         padding-top: 18px;
          padding-bottom: 18px;
       }
    }
@@ -496,7 +499,7 @@ main {
       display: block;
       &__button {
          position: fixed;
-         top: 6px;
+         top: 10px;
          left: 30px;
          z-index: 30;
          width: 60px;
@@ -604,6 +607,9 @@ main {
    .main {
       .parthers {
          &__list {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
             font-size: 16px;
          }
       }
@@ -629,7 +635,7 @@ main {
 
 @media (max-width: 767px) {
    .container {
-      max-width: 568px;
+      max-width: 576px;
    }
 
    .desc {
@@ -655,7 +661,6 @@ main {
    .main {
       .parthers {
          &__list {
-            
          }
       }
 
@@ -665,6 +670,89 @@ main {
             grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
             margin-bottom: 15px;
          }
+      }
+   }
+}
+
+@media (max-width: 575px) {
+   .header {
+      &__nav {
+         padding-top: 20px;
+         padding-bottom: 20px;
+      }
+      &__logo {
+         font-size: 19px;
+         text-align: center;
+      }
+   }
+
+   .burger-menu__button {
+      width: 46px;
+      height: 46px;
+      margin-top: 6px;
+      top: 4px;
+   }
+   .burger-menu__lines,
+   .burger-menu__lines::after,
+   .burger-menu__lines::before {
+      width: 22px;
+      height: 3px;
+   }
+   .burger-menu__lines::after {
+      top: -8px;
+   }
+   .burger-menu__lines::before {
+      top: 8px;
+   }
+
+   .desc {
+      font-size: 11px;
+      &__service {
+         font-size: 26px;
+      }
+      &__bold {
+         font-size: 12px;
+      }
+   }
+   .burger-menu__nav {
+      left: -150%;
+   }
+   .main {
+      &__profile {
+         font-size: 38px;
+      }
+      .repair {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr;
+         &__box1 {
+            font-size: 10px;
+         }
+      }
+      .parthers {
+         &__title {
+            font-size: 38px;
+         }
+         &__list {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            font-size: 9px;
+         }
+      }
+      .clients {
+         &__title {
+            font-size: 38px;
+         }
+         &__list {
+            font-size: 8px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px;
+            justify-items: center;
+         }
+      }
+      .map-text {
+         font-size: 38px;
       }
    }
 }
