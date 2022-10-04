@@ -798,5 +798,9 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+.disabled {
+  pointer-events: none;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
