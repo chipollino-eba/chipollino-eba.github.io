@@ -601,6 +601,10 @@ body {
     font-size: 14px;
   }
 
+  .main .advantage__image {
+    max-width: 172px;
+    max-height: 172px;
+  }
   .main .advantage__title {
     font-size: 60px;
   }
