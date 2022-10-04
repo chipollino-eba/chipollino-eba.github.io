@@ -266,6 +266,10 @@ main {
    width: 100%;
    background: rgb(95, 95, 95);
    margin-top: 70px;
+   &__item {
+      position: relative;
+      padding-left: 30px;
+   }
    &__list {
       display: grid;
       row-gap: 8px;
@@ -274,6 +278,40 @@ main {
       padding-top: 22px;
       padding-bottom: 22px;
    }
+   &__list &__ardess::before {
+      content: "";
+      position: absolute;
+      background: url("../img/location.svg") no-repeat center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 6px;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 22px;
+   }
+   &__list &__phone::before {
+      content: "";
+      position: absolute;
+      background: url("../img/phone.svg") no-repeat center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 9px;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 20px;
+   }
+   &__list &__mail::before {
+      content: "";
+      position: absolute;
+      background: url("../img/mail.svg") no-repeat center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 12px;
+      transform: translateY(-50%);
+      width: 17px;
+      height: 13px;
+   }
+
    &__link {
       color: white;
    }
@@ -684,10 +722,10 @@ main {
       }
 
       .clients {
+         margin-bottom: 40px;
          &__list {
             font-size: 13px;
             grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
-            margin-bottom: 15px;
          }
       }
    }
@@ -700,6 +738,12 @@ main {
          &__text {
             font-size: 13px;
          }
+      }
+      .image-first {
+         margin-right: 60px;
+      }
+      .image-second {
+         margin-left: 60px;
       }
       .work {
          display: grid;

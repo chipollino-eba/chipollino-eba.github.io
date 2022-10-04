@@ -226,6 +226,10 @@ body {
   background: #5f5f5f;
   margin-top: 70px;
 }
+.footer__item {
+  position: relative;
+  padding-left: 30px;
+}
 .footer__list {
   display: grid;
   row-gap: 8px;
@@ -233,6 +237,39 @@ body {
   color: white;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+.footer__list .footer__ardess::before {
+  content: "";
+  position: absolute;
+  background: url("../img/location.svg") no-repeat center;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 6px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 22px;
+}
+.footer__list .footer__phone::before {
+  content: "";
+  position: absolute;
+  background: url("../img/phone.svg") no-repeat center;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 9px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 20px;
+}
+.footer__list .footer__mail::before {
+  content: "";
+  position: absolute;
+  background: url("../img/mail.svg") no-repeat center;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 12px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 13px;
 }
 .footer__link {
   color: white;
@@ -597,10 +634,12 @@ body {
     font-size: 12px;
   }
 
+  .main .clients {
+    margin-bottom: 40px;
+  }
   .main .clients__list {
     font-size: 13px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
-    margin-bottom: 15px;
   }
 
   .main .advantage__title {
@@ -608,6 +647,12 @@ body {
   }
   .main .advantage__text {
     font-size: 13px;
+  }
+  .main .image-first {
+    margin-right: 60px;
+  }
+  .main .image-second {
+    margin-left: 60px;
   }
   .main .work {
     display: grid;
