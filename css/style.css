@@ -868,6 +868,9 @@ body {
     width: 300px;
     margin-top: 30px;
   }
+  .main .work__disel-first {
+    margin-bottom: 30px;
+  }
   .main .work__list {
     display: grid;
     grid-template-columns: 1fr;
