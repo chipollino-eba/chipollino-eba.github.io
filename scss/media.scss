@@ -19,10 +19,10 @@
       padding-bottom: 7em;
       font-size: 20px;
       &__service {
-         font-size: 60px;
+         font-size: 45px;
       }
       &__bold {
-         font-size: 23px;
+         font-size: 22px;
       }
    }
 
@@ -35,41 +35,42 @@
 
    .main {
       &__profile {
-         font-size: 60px;
+         font-size: 66px;
       }
 
       .parthers {
          &__title {
-            font-size: 60px;
+            font-size: 66px;
          }
          &__list {
-            .rpr {
-               grid-column: 1 / 3;
+            font-size: 26px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            li {
+               padding-bottom: 15px;
             }
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            row-gap: 20px;
-            font-size: 20px;
-            justify-items: center;
          }
       }
 
       .clients {
          margin-bottom: 160px;
          &__title {
-            font-size: 60px;
+            font-size: 66px;
          }
          &__list {
             font-size: 17px;
-            grid-template-rows: 65px 65px 65px 65px 65px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
             justify-items: start;
+            align-items: center;
+            font-size: 28px;
          }
       }
    }
 
    .map-text {
-      font-size: 60px;
+      font-size: 66px;
    }
 
    .footer {
@@ -84,7 +85,7 @@
    .header {
       &__logo {
          padding-right: 0;
-         font-size: 36px;
+         font-size: 28px;
       }
       &__list {
          display: none;
@@ -95,12 +96,25 @@
       }
    }
 
+   .desc {
+      &__service {
+         font-size: 66px;
+      }
+      &__bold {
+         font-size: 25px;
+      }
+   }
+
    // burger start
    .burger-menu {
       display: block;
+      &__link-phone {
+         color: white;
+         font-size: 28px;
+      }
       &__button {
          position: fixed;
-         top: 10px;
+         top: 5px;
          left: 30px;
          z-index: 30;
          width: 60px;
@@ -167,7 +181,7 @@
       padding-left: 45px;
       padding-top: 45px;
       padding-right: 45px;
-      font-size: 32px;
+      font-size: 24px;
       font-family: "Montserrat-SemiBold";
       text-transform: uppercase;
       text-decoration: none;
@@ -196,6 +210,9 @@
    // burger end
 
    .repair {
+      display: flex;
+      align-items: center;
+      text-align: center;
       &__box1,
       &__box2 {
          font-size: 14px;
@@ -204,29 +221,29 @@
    }
 
    .main {
-      .parthers {
-         &__list {
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            font-size: 16px;
-         }
-      }
+      // .parthers {
+      //    &__list {
+      //       display: flex;
+      //       flex-direction: column-reverse;
+      //       align-items: center;
+      //       font-size: 16px;
+      //    }
+      // }
 
-      .clients {
-         &__list {
-            font-size: 14px;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 50px 50px 50px 50px 50px 50px;
-            justify-items: start;
-         }
-      }
+      // .clients {
+      //    &__list {
+      //       font-size: 14px;
+      //       grid-template-columns: 1fr 1fr 1fr;
+      //       grid-template-rows: 50px 50px 50px 50px 50px 50px;
+      //       justify-items: start;
+      //    }
+      // }
    }
 
    .footer {
       &__list {
          li {
-            font-size: 14px;
+            font-size: 18px;
          }
       }
    }
@@ -256,12 +273,19 @@
    }
 
    .desc {
-      font-size: 16px;
+      font-size: 20px;
+      &__down,
+      &__bold {
+         display: block;
+         text-align: start;
+         font-family: "Montserrat-Regular";
+      }
       &__service {
-         font-size: 44px;
+         font-size: 68px;
+         text-align: start;
       }
       &__bold {
-         font-size: 18px;
+         display: none;
       }
    }
 
@@ -278,14 +302,24 @@
    .main {
       .parthers {
          &__list {
+            // display: flex;
+            // flex-wrap: wrap;
+            // flex-direction: column;
+            // align-items: center;
+            // font-size: 22px;
          }
       }
 
       .clients {
          margin-bottom: 40px;
          &__list {
-            font-size: 13px;
-            grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+            display: flex;
+            flex-direction: column;
+            font-size: 28px;
+            grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+            li {
+               padding-bottom: 15px;
+            }
          }
       }
    }
@@ -295,7 +329,7 @@
          top: 9px;
       }
    }
-   
+
    // внутренние страницы
    .main {
       .advantage {
@@ -313,18 +347,20 @@
          margin-left: 60px;
       }
       .work {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 1fr 1fr 1fr;
-         justify-items: center;
-         row-gap: 20px;
-         &__type {
-            width: 450px;
-            height: 150px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         &__name {
+            font-size: 28px;
          }
-         &__list {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+         &__terrain-first {
+            height: 310px;
+            width: 450px;
+         }
+         &__terrain-second {
+            margin-top: 30px;
+            height: 436px;
+            width: 450px;
          }
       }
    }
@@ -333,8 +369,8 @@
 @media (max-width: 575px) {
    .header {
       &__nav {
-         padding-top: 20px;
-         padding-bottom: 20px;
+         padding-top: 15px;
+         padding-bottom: 15px;
       }
       &__logo {
          font-size: 19px;
@@ -342,10 +378,18 @@
       }
    }
 
+   .desc {
+      padding-top: 8em;
+      padding-bottom: 7em;
+      &__service {
+         text-align: start;
+      }
+   }
+
    .burger-menu__button {
       width: 46px;
       height: 46px;
-      top: 8px;
+      top: 5px;
    }
 
    .burger-menu__lines,
@@ -368,99 +412,119 @@
    }
 
    .desc {
-      font-size: 10px;
+      font-size: 16px;
       &__service {
-         font-size: 22px;
-      }
-      &__bold {
-         font-size: 10px;
+         font-size: 48px;
       }
    }
 
+   // внутренняя страница
    .main {
-      &__profile {
-         font-size: 32px;
-         letter-spacing: 1px;
-      }
       .all-terrain {
          margin-top: 50px;
       }
+
+      .advantage {
+         &__title {
+            padding-top: 90px;
+            font-size: 36px;
+         }
+         &__text {
+            font-family: "Montserrat-Light";
+            font-size: 14px;
+         }
+         &__text-left {
+            text-align: left;
+         }
+         &__text-right {
+            text-align: right;
+         }
+      }
+      &__profile {
+         font-size: 40px;
+         margin-bottom: 40px;
+      }
+      &__prof {
+         font-size: 38px;
+         margin-bottom: 30px;
+         margin-top: 24px;
+      }
+
       .repair {
          display: grid;
          grid-template-columns: 1fr;
          grid-template-rows: 1fr 1fr;
-         &__box1 {
-            font-size: 10px;
-         }
-         &__title {
-            font-size: 20px;
+         &__titel {
+            font-size: 32px;
          }
       }
       .parthers {
          &__title {
-            font-size: 32px;
-            letter-spacing: 1px;
+            font-size: 40px;
          }
          &__list {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
-            font-size: 13px;
+            font-size: 14px;
          }
       }
+
       .clients {
          margin-bottom: 62px;
          &__title {
-            font-size: 32px;
-            letter-spacing: 1px;
+            font-size: 40px;
          }
          &__list {
-            font-size: 15px;
+            font-size: 17px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            row-gap: 15px;
             justify-items: center;
             justify-content: center;
          }
       }
+
       .map-text {
          font-size: 32px;
          letter-spacing: 1px;
       }
-   }
 
-   // внутренние страницы
-   .main {
-      &__prof {
-         font-size: 36px;
-      }
-      .advantage {
-         &__title {
-            font-size: 36px;
-         }
-         &__text {
-            font-size: 11px;
-         }
-      }
       .image-first {
-         margin-right: 30px;
+         margin-right: 15px;
       }
+
       .image-second {
-         margin-left: 30px;
+         margin-left: 15px;
       }
+
       .work {
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 1fr 1fr 1fr;
-         justify-items: center;
-         row-gap: 20px;
-         &__type {
-            width: 290px;
-            height: 190px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         li {
+            font-size: 18px;
+         }
+         &__terrain-first {
+            height: 380px;
+            width: 300px;
+         }
+         &__terrain-second {
+            margin-top: 30px;
+            height: 500px;
+            width: 300px;
+         }
+         &__svp-first {
+            height: 340px;
+            width: 300px;
+         }
+         &__svp-second {
+            height: 380px;
+            width: 300px;
+            margin-top: 30px;
          }
          &__list {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
          }
       }
    }
