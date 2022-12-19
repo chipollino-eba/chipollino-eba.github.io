@@ -124,6 +124,12 @@ body {
 .desc__down {
   display: none;
 }
+.desc__jobs {
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
 .work {
   display: grid;
@@ -424,6 +430,18 @@ body {
   color: #a0a0a0;
 }
 
+.job-image {
+  margin-top: 45px;
+  margin-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.job-img {
+  padding: 40px 10px 10px 10px;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 992px;
@@ -491,6 +509,16 @@ body {
 
   .footer {
     font-size: 20px;
+  }
+
+  .job-img {
+    width: 280px;
+    height: 440px;
+  }
+
+  .big {
+    width: 910px;
+    height: 500px;
   }
 }
 @media (max-width: 991px) {
@@ -646,6 +674,16 @@ body {
   .main .advantage__text {
     font-size: 16px;
   }
+
+  .job-img {
+    width: 220px;
+    height: 340px;
+  }
+
+  .big {
+    width: 740px;
+    height: 500px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -720,6 +758,16 @@ body {
     margin-top: 30px;
     height: 436px;
     width: 450px;
+  }
+
+  .job-img {
+    width: 320px;
+    height: 500px;
+  }
+
+  .big {
+    width: 440px;
+    height: 300px;
   }
 }
 @media (max-width: 575px) {
@@ -874,6 +922,11 @@ body {
   .main .work__list {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .big {
+    width: 320px;
+    height: 420px;
   }
 }
 

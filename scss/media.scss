@@ -76,6 +76,16 @@
    .footer {
       font-size: 20px;
    }
+
+   .job-img {
+      width: 280px;
+      height: 440px;
+   }
+
+   .big {
+      width: 910px;
+      height: 500px;
+   }
 }
 
 @media (max-width: 991px) {
@@ -265,6 +275,16 @@
    }
    .work {
    }
+
+   .job-img {
+      width: 220px;
+      height: 340px;
+   }
+
+   .big {
+      width: 740px;
+      height: 500px;
+   }
 }
 
 @media (max-width: 767px) {
@@ -363,6 +383,15 @@
             width: 450px;
          }
       }
+   }
+   .job-img {
+      width: 320px;
+      height: 500px;
+   }
+
+   .big {
+      width: 440px;
+      height: 300px;
    }
 }
 
@@ -532,5 +561,10 @@
             grid-template-columns: 1fr;
          }
       }
+   }
+
+   .big {
+      width: 320px;
+      height: 420px;
    }
 }

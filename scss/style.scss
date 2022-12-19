@@ -79,6 +79,12 @@
    &__down {
       display: none;
    }
+   &__jobs {
+      font-family: "Montserrat-Bold";
+      font-size: 52px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+   }
 }
 
 .work {
@@ -388,6 +394,20 @@
 .disabled-burger {
    pointer-events: none;
    color: rgb(160, 160, 160);
+}
+
+// jobs
+
+.job-image {
+   margin-top: 45px;
+   margin-bottom: 75px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.job-img {
+   padding: 40px 10px 10px 10px;
 }
 
 @import "media";
